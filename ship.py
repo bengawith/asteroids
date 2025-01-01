@@ -5,7 +5,8 @@ from settings import Settings
 
 class Ship(Asteroid):
     def __init__(self, game, x, y):
-        super().__init__(x, y, Settings.player_radius)
+        self.settings = game.settings
+        super().__init__(x, y, self.settings.player_radius)
         self.rotation = 0
 
     def draw(self, screen):
@@ -28,4 +29,4 @@ class Ship(Asteroid):
             self.rotate(dt)
 
     def rotate(self, dt):
-        self.rotation += PLAYER_TURN_SPEED * dt
+        self.rotation += self.settings.player_turn_speed * dt
