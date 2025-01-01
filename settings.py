@@ -7,6 +7,7 @@ class Settings:
 
         # Ship Settings
         self.player_radius = 20
+        self.player_turn_speed = 300
         self.ship_limit = 3
     
         # Asteroid Settings
