@@ -1,5 +1,17 @@
+import sys
+import os
+from time import sleep
 import pygame
+from pathlib import Path
+
 from settings import Settings
+from ship import Ship
+from bullet import Bullet
+from asteroid import Asteroid
+from button import Button
+from game_stats import GameStats
+from scoreboard import Scoreboard
+from stars import Stars
 
 
 class Asteroids:
