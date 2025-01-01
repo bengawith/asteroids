@@ -6,6 +6,7 @@ class Settings:
         self.bg_colour = (0,0,0)
 
         # Ship Settings
+        self.player_radius = 20
         self.ship_limit = 3
     
         # Asteroid Settings
